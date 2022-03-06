@@ -1,0 +1,26 @@
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+WHITE = (250, 250, 250)
+BLACK = (3, 3, 3)
+BROWN = (165, 42, 42)
+PURPLE = (128, 0, 128)
+ORANGE = (255, 165, 0)
+GREY = (128, 128, 128)
+TURQUOISE = (63, 224, 208)
+
+COLORS = {
+    "CLOSED": RED,
+    "OPEN": GREEN,
+    "BARRIER": BLACK,
+    "TEXT": BLACK,
+    "END": TURQUOISE,
+    "LINE": GREY,
+    "MUD": BROWN,
+    "PATH": PURPLE,
+    "ROAD": GREY,
+    "START": ORANGE,
+    "BACKGROUND": BLACK,
+    "DEFAULT": WHITE
+}
