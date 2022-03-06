@@ -4,6 +4,7 @@ import pygame as pg
 class A_Star:
     def __init__(cls):
         cls.title = "A* Path Finding Algorithm"
+        cls.name = "A*"
 
     def h(cls, p1, p2):
         """
