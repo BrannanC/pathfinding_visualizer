@@ -1,8 +1,6 @@
 import pygame as pg
 
 from colors import COLORS
-from a_star import A_Star
-from dijkstras import Dijkstras
 from visualizer import Visualizer
 
 WINDOW_HEIGHT = 980
@@ -21,7 +19,6 @@ pg.display.set_caption("Path Finding Algorithm Visualizer")
 
 if __name__ == "__main__":
     vs = Visualizer(parent, screen, ROWS, GRID_WIDTH)
-    # vs.algorithm = Dijkstras() # A_Star()
     
     running = True
     while running:
