@@ -105,7 +105,6 @@ class AlgoButton(Button):
             return True
 
 
-
 class Visualizer:
     def __init__(cls, parent, screen, rows, width) -> None:
         cls.rows = rows
@@ -196,18 +195,10 @@ class Visualizer:
 # ******** DRAWS **********
     def draw_grid(cls):
         for i in range(cls.rows):
-            pg.draw.line(
-                cls.screen, COLORS["LINE"], 
-                (0, i * cls.cell_width), 
-                (cls.width, i * cls.cell_width)
-            )
-            for j in range(cls.rows):
-                pg.draw.line(
-                    cls.screen,
-                    COLORS["LINE"],
-                    (j * cls.cell_width, 0),
-                    (j * cls.cell_width, cls.width)
-                )
+            x = i * cls.cell_width
+            y = i * cls.cell_width
+            pg.draw.line(cls.screen, COLORS["LINE"], (x, 0), (x, cls.width) )
+            pg.draw.line(cls.screen, COLORS["LINE"], (0, y), (cls.width, y) )
 
     def draw_header(cls):
         cls.header = header1.render(cls.algorithm.title, True, COLORS["TEXT"])
